@@ -1,0 +1,409 @@
+@font-face {
+  font-family: "Gilroy-ExtraBold";
+  src: url("../font/Gilroy-ExtraBold.woff2") format("woff2"),
+    url("../font/Gilroy-ExtraBold.woff") format("woff");
+}
+
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+  .hide-s {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hide-m {
+    display: none;
+  }
+}
+
+body {
+  font-family: "Gilroy-ExtraBold", sans-serif;
+}
+
+a {
+  color: #777;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #444;
+  text-decoration: underline #ffffff;
+}
+
+.bgImg {
+  background-image: url("../img/chair-r.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-dark {
+  background-color: #000000 !important;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: #f1f1f1 !important;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  z-index: 999999;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  z-index: 999999;
+}
+
+.navbarItem {
+  display: flex;
+  flex-direction: row;
+  z-index: 999999;
+}
+
+.span {
+  transition: 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+
+.span {
+  display: block;
+  background: #000000;
+}
+
+#menu-toggle {
+  width: 35px;
+  height: 35px;
+  right: -17px;
+  position: relative;
+  position: relative;
+  cursor: pointer;
+}
+
+#menu-toggle #hamburger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#menu-toggle #hamburger span {
+  width: 25px;
+  height: 2.5px;
+  position: relative;
+  top: 2px;
+  margin: 5px auto;
+}
+
+#menu-toggle #hamburger span:nth-child(1) {
+  transition-delay: 0.5s;
+}
+
+#menu-toggle #hamburger span:nth-child(2) {
+  transition-delay: 0.625s;
+}
+
+#menu-toggle #hamburger span:nth-child(3) {
+  transition-delay: 0.75s;
+}
+
+#menu-toggle #cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+
+#menu-toggle #cross span:nth-child(1) {
+  height: 0%;
+  width: 2.5px;
+  position: absolute;
+  top: 4px;
+  left: 16px;
+  transition-delay: 0s;
+}
+
+#menu-toggle #cross span:nth-child(2) {
+  width: 0%;
+  height: 2.5px;
+  top: 16px;
+  left: 4px;
+  position: absolute;
+  transition-delay: 0.25s;
+}
+
+#menu-toggle.open #hamburger span {
+  width: 0%;
+}
+
+#menu-toggle.open #hamburger span:nth-child(1) {
+  transition-delay: 0s;
+}
+
+#menu-toggle.open #hamburger span:nth-child(2) {
+  transition-delay: 0.125s;
+}
+
+#menu-toggle.open #hamburger span:nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 80%;
+  transition-delay: 0.625s;
+}
+
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: 0.375s;
+}
+
+.bg-dark .span {
+  background-color: #f1f1f1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbarNav {
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 99999;
+    font-size: 20px;
+    padding-top: 10rem;
+    padding-left: 15px;
+  }
+
+  .bg-dark #navbarNav {
+    background-color: #000000 !important;
+  }
+
+  .dropdown-menu {
+    margin-right: 15px;
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.dropdown-menu {
+  padding: 2rem 0;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 4px 4px 15px -3px rgba(200, 200, 200, 0.5);
+  -moz-box-shadow: 4px 4px 15px -3px rgba(200, 200, 200, 0.5);
+  box-shadow: 4px 4px 15px -3px rgba(200, 200, 200, 0.5);
+}
+
+.hero {
+  font-size: 60px;
+  margin-top: 6rem;
+}
+
+#changeText {
+  height: 0.9em;
+}
+
+.stroke {
+  color: transparent !important;
+  -webkit-text-stroke: 1px #000000;
+}
+
+figure {
+  overflow: hidden;
+}
+
+figure span {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+figure .bestSeller {
+  background-color: #26a541;
+}
+
+figure .trending {
+  background-color: #d3cf00;
+}
+
+.col#zoomIn img,
+.col-6#zoomIn img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.col#zoomIn:hover img,
+.col-6#zoomIn:hover img {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.bg-1 {
+  background-color: #ac9891;
+  color: #fff;
+  background-image: url("../img/chair3/chair1.png");
+  padding: 18rem 1rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+}
+
+.bg-2 {
+  background-color: #bb6752;
+  color: #fff;
+  background-image: url("../img/chair3/chair2.png");
+  padding: 18rem 1rem;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+}
+
+.bg-1 a,
+.bg-2 a {
+  color: #fff;
+}
+
+.bgFooter {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.mt {
+  margin-top: 6rem;
+}
+
+.mt-l {
+  margin-top: 10rem;
+}
+
+.form-control {
+  border-radius: 0;
+  background-color: transparent;
+  color: #000;
+}
+
+.form-control:active,
+.form-control:hover {
+  outline: #000;
+  background-color: transparent;
+}
+
+#subscribe {
+  border-radius: 0;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+#subscribe:active,
+#subscribe:hover {
+  outline: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .col-xs-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+th,
+td {
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+.count:before {
+  content: "-";
+  margin-right: 10px;
+}
+
+.count:after {
+  content: "+";
+  margin-left: 10px;
+}
+
+.btn-block {
+  display: block;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.75rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.tab1,
+.tab2 {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#map {
+  height: 370px;
+  width: 100%;
+}
+
+.cart:after {
+  content: "3";
+  width: 20px;
+  height: 20px;
+  background-color: #777;
+  color: #f1f1f1;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  padding-left: 5.5px;
+}
+
+.toTop {
+  position: fixed;
+  bottom: 60px;
+  right: -45px;
+  font-size: 13px;
+  transform: rotateZ(-90deg);
+  display: none;
+}
